@@ -1,0 +1,10 @@
+<%= form_tag videos_path, id: "new_video" do %>
+
+  <%= label_tag "Title" %>
+  <%= text_field_tag "Title" %>
+  <%= label_tag "Description" %>
+  <%= text_field_tag "Description" %>
+  <%= label_tag "Video" %>
+  <%= file_field_tag "Video" %>
+  <%= submit_tag "Create" %>
+<% end %>

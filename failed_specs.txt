@@ -1,0 +1,4 @@
+example_id                                    | status  | run_time        |
+--------------------------------------------- | ------- | --------------- |
+./spec/acceptance/upload_video_spec.rb[1:1:1] | pending | 0.13561 seconds |
+./spec/acceptance/upload_video_spec.rb[1:1:2] | passed  | 0.00065 seconds |
