@@ -1,10 +1,9 @@
-<%= form_tag videos_path, id: "new_video" do %>
-
-  <%= label_tag "Title" %>
-  <%= text_field_tag "Title" %>
-  <%= label_tag "Description" %>
-  <%= text_field_tag "Description" %>
-  <%= label_tag "Video" %>
-  <%= file_field_tag "Video" %>
-  <%= submit_tag "Create" %>
+<%= form_for @video do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <%= f.label :url %>
+  <%= f.file_field :url %>
+  <%= f.submit "Create" %>
 <% end %>
